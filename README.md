@@ -30,8 +30,4 @@ This project is a simple web-based calculator using **CGI (Common Gateway Interf
 3. Place the Perl script in the `cgi-bin` directory of your Apache server.
 4. Configure the `httpd.conf` file to support the `cgi-bin` folder.
 5. Open the form in a browser and test the application by navigating to `http://localhost/cgi-bin/your_script.cgi`.
-
-## License
-
-Distributed under the no License. See LICENSE.txt for more information.
   
