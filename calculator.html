@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            display: inline-block;
+        }
+
+        label, select, input {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-radius: 20px;
+        }
+
+        input[type="submit"]{
+            margin-top: 20px;
+            font-size: 14px;
+            padding: 12px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            width: 100%;
+            border-radius: 40px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #097f24;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <form action="/cgi-bin/calculator.cgi" method="post">
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1" name="num1" required>
+
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2" name="num2" required>
+
+        <label for="operation">Operation:</label>
+        <select id="operation" name="operation" required>
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select>
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+
+</html>
