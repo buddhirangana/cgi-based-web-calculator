@@ -2,6 +2,10 @@
 
 This project is a simple web-based calculator using **CGI (Common Gateway Interface)**. It demonstrates how to handle user input from an HTML form, process it using a Perl script on the server-side, and return the result dynamically to the user. The application supports basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
+## Screenshot
+
+![screenshot](assests/screenshot.png)
+
 ## Features
 
 - **CGI-Enabled**: The application leverages CGI to process server-side logic using Perl.
