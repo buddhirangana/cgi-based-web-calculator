@@ -1,1 +1,1 @@
-# Perl CGI Calculator
+# CGI-Based Web Calculator
